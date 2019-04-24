@@ -16,4 +16,4 @@ def analyze_text(text):
     e_percent = (e_count / alpha_count) * 100
 
     return ("The text contains " + repr(alpha_count) + " alphabetic characters, of which " + repr(e_count) + " "
-          + "(" + repr(round(e_percent, 2)) + "%)" + " are 'e'.")
+          + "(" + ("%.2f" % e_percent) + "%)" + " are 'e'.")
